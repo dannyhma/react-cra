@@ -4,5 +4,5 @@ export function Welcomeh2(props) {
 }
 
 export function Welcomeh3() {
-  return <h3>Welcomeh 2</h3>;
+  return <h3>Welcome h3</h3>;
 }
