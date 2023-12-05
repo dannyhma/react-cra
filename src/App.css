@@ -6,3 +6,8 @@
   border: none;
   cursor: pointer;
 }
+
+h2,
+h3 {
+  color: white;
+}
