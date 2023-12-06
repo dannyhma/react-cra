@@ -1,15 +1,19 @@
-// import logo from "./logo.svg";
 import "./App.css";
-import { Welcomeh2, Welcomeh3 } from "./Welcome";
-import Button from "./Button";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
 
 function App() {
   return (
     <div className="App">
-      <Welcomeh2 children="Welcome h2" />
-      <Welcomeh3 />
-      <Welcomeh2>Saya adalah content</Welcomeh2>
-      <Button>Click Me!</Button>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </div>
   );
 }
